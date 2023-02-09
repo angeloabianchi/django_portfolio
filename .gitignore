@@ -1,1 +1,4 @@
 .env
+jobs/__pycache__
+home/__pycache__
+portfolio/__pycache__
