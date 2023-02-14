@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Job
 
 # Create your views here.
@@ -8,7 +8,10 @@ def index(request):
     return response
 
 def job(request, job_id):
-    print(job_id)
-    response = render(request, 'jobs/index.html')
+    job = get_object_or_404(Job, pk=job_id)
+    if job:
+        response = render(request, 'jobs/job/job.html', {'job': job})
+    else:
+        response = render(request, 'jobs/index.html')
     return response
 
