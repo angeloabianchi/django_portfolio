@@ -58,7 +58,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],                                 # <-- the template folder needs to be declared like that, otherwise django cannot find the templates there are out of the app folder. 
+        'DIRS': [BASE_DIR / 'templates', BASE_DIR / 'static/js'],                                 # <-- the template folder needs to be declared like that, otherwise django cannot find the templates there are out of the app folder. 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -145,7 +145,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR
+#MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
 # Default primary key field type

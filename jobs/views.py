@@ -7,3 +7,8 @@ def index(request):
     response = render(request, 'jobs/index.html', {'jobs':jobs})
     return response
 
+def job(request, job_id):
+    print(job_id)
+    response = render(request, 'jobs/index.html')
+    return response
+
