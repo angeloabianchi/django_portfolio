@@ -1,7 +1,6 @@
-<p>{{ job.name }}</p>
-
+{% extends "../../base.html" %}
 {% load static %}
-
+{% block content %}
 
 <!doctype html>
 
@@ -96,6 +95,7 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Job Detail</h1>
+        <p class="lead text-muted">{{ job.name }}</p>
         <p class="lead text-muted">{{ job.summary }}</p>
         <img src="{{job.image.url}}" height=300></img>
         <p>
@@ -126,3 +126,4 @@
     -->
   </body>
 </html>
+{% endblock content %}
