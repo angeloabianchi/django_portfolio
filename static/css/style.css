@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(56, 56, 56);
+}
+
+footer {
+    max-width: 100%;
+}
+
+.navbar {
+    height: 100px;
+    background-color: green;
+}
+
+.bg-style {
+    background-color: rgb(56, 56, 56);
+}
