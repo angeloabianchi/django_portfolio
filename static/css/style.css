@@ -1,5 +1,30 @@
+ @font-face {
+    font-family: 'Abril Fatface';
+    src: url('../fonts/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Vidaloka';
+    src: url('../fonts/Vidaloka-Regular.ttf');
+}
+
+/*
+@font-face {
+    font-family: 'FBI Old Report';
+    src: url('../fonts/FBI\ Old\ Report-Regular.ttf');
+}
+*/
+
+
+
+
 body {
-    background-color: rgb(56, 56, 56);
+    /* font-family: 'FBI Old Report'; */
+    font-family: 'Vidaloka';
+}
+
+p {
+    text-align: justify;
 }
 
 footer {
@@ -7,10 +32,21 @@ footer {
 }
 
 .navbar {
+    font-family: 'Abril Fatface';
     height: 100px;
     background-color: green;
 }
 
 .bg-style {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(177, 178, 174);
 }
+
+.cusFont {
+    font-family: 'Abril Fatface';
+}
+
+.breakingNewsFontSize {
+    font-size: 7.5rem;
+}
+
+
